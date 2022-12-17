@@ -1,0 +1,40 @@
+module single_cycle_computer_tb ();  
+
+reg Clock; 
+wire RegSrc, ExtControl, RegWrite, MemWrite, MemtoReg, ALUSrc, flagUpdate, ALUShiftSelect; 
+wire [2:0]ALUop; 
+wire [1:0]ShiftSel; 
+wire [31:0]FLAG_OUT; 
+wire [5:0]funct;
+wire [1:0]op; 
+wire [1:0]shift_type;
+wire [31:0]RegisterOut_0; 
+wire [31:0]RegisterOut_1; 
+
+single_cycle_computer_all dut (Clock, 
+RegisterOut_0, 
+RegisterOut_1, 
+FLAG_OUT, 
+funct, 
+RegSrc, 
+ExtControl, 
+RegWrite, 
+MemWrite, 
+MemtoReg, 
+ALUSrc, 
+flagUpdate, 
+ALUShiftSelect, 
+ALUop
+); 
+
+
+
+initial begin 
+	clk <= 0; 
+end  
+
+
+always begin 
+	#5; 
+	Clock <= ~Clock; 
+end 

@@ -1,0 +1,514 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/simulation/qsim
+valu_unit
+Z1 !s110 1651883225
+!i10b 1
+!s100 <oBhHEM=YZmYo]0UAb0A70
+I1k4FSgDf[FF>[5EkB2?D^1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1651883223
+Z3 8single_cycle_computer_lab_3.vo
+Z4 Fsingle_cycle_computer_lab_3.vo
+Z5 L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1651883225.000000
+Z8 !s107 single_cycle_computer_lab_3.vo|
+Z9 !s90 -work|work|single_cycle_computer_lab_3.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+valu_unit_vlg_vec_tst
+R1
+!i10b 1
+!s100 N4Y=Sj750A7V46;WI:JBV3
+I2HN9_eHO?n<>lU[Z84id:2
+R2
+R0
+w1651883222
+8Waveform7.vwf.vt
+FWaveform7.vwf.vt
+Z12 L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform7.vwf.vt|
+!s90 -work|work|Waveform7.vwf.vt|
+!i113 1
+R10
+R11
+vbarrel_shifter
+Z13 !s110 1651870571
+!i10b 1
+!s100 E8gOV9h@JWGk[Kj_0ESEH2
+I;RdEi4jGDbJL=GMIAD`4`1
+R2
+R0
+w1651870570
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z14 !s108 1651870571.000000
+R8
+R9
+!i113 1
+R10
+R11
+vbarrel_shifter_vlg_vec_tst
+R13
+!i10b 1
+!s100 g<2M=:>k<TCak[Pe0K4Td1
+IA1CFGe6e3eX`FKFg15iRj3
+R2
+R0
+w1651870568
+Z15 8Waveform5.vwf.vt
+Z16 FWaveform5.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+R14
+Z17 !s107 Waveform5.vwf.vt|
+Z18 !s90 -work|work|Waveform5.vwf.vt|
+!i113 1
+R10
+R11
+vdata_memory
+!s110 1651963698
+!i10b 1
+!s100 P5SRNAKCFg:a3nf?=jNk00
+Iel;QWPIadaHzUohZfEDV<3
+R2
+R0
+w1651963696
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1651963697.000000
+R8
+R9
+!i113 1
+R10
+R11
+vdata_memory_vlg_vec_tst
+!s110 1651963699
+!i10b 1
+!s100 @BoU5NGJEedO1W<oXeSSM0
+I;;n4oLHWPRW=4OIY:^_J@3
+R2
+R0
+w1651963693
+8Waveform12.vwf.vt
+FWaveform12.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+!s108 1651963698.000000
+!s107 Waveform12.vwf.vt|
+!s90 -work|work|Waveform12.vwf.vt|
+!i113 1
+R10
+R11
+vfull_adder
+Z19 !s110 1651870949
+!i10b 1
+!s100 fASPIZ[S3XaafY:2[GK1F1
+I27YH=5m23ld`=RNkAY4dG1
+R2
+R0
+w1651870948
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z20 !s108 1651870949.000000
+R8
+R9
+!i113 1
+R10
+R11
+vfull_adder_vlg_vec_tst
+R19
+!i10b 1
+!s100 B@;iSoB:geL`ManhVh33z2
+I61`]XnEM0NRGcL^`CKL5R3
+R2
+R0
+w1651870946
+8Waveform6.vwf.vt
+FWaveform6.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+R20
+!s107 Waveform6.vwf.vt|
+!s90 -work|work|Waveform6.vwf.vt|
+!i113 1
+R10
+R11
+vimmediate_extender
+Z21 !s110 1652019903
+!i10b 1
+!s100 TRYeK>2Mz=AAk`FEadJ_D0
+IHnA3l`1SIgUa5PHo]o:X[2
+R2
+R0
+w1652019901
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z22 !s108 1652019903.000000
+R8
+R9
+!i113 1
+R10
+R11
+vimmediate_extender_vlg_vec_tst
+R21
+!i10b 1
+!s100 <[Wh1`@E<5_E^fi=M3hS42
+IdD?fbKj4fmZ@hX1n<ac_c2
+R2
+R0
+w1652019900
+R15
+R16
+R12
+R6
+r1
+!s85 0
+31
+R22
+R17
+R18
+!i113 1
+R10
+R11
+vinstruction_memory
+!s110 1651963411
+!i10b 1
+!s100 GO7k5mU3]A]Ob1mNbD@bl2
+IMFd_HfZZ[3j189W]Sl[OS3
+R2
+R0
+w1651963410
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1651963411.000000
+R8
+R9
+!i113 1
+R10
+R11
+vinstruction_memory_vlg_vec_tst
+!s110 1651963412
+!i10b 1
+!s100 Lk]b_?bI<o4lVlQfcClOh1
+Ii?Ej[C:=:gKJ@`[;GiAlo0
+R2
+R0
+w1651963408
+8Waveform11.vwf.vt
+FWaveform11.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+!s108 1651963412.000000
+!s107 Waveform11.vwf.vt|
+!s90 -work|work|Waveform11.vwf.vt|
+!i113 1
+R10
+R11
+vmemory_128x8bit
+Z23 !s110 1651856305
+!i10b 1
+!s100 9g:534j0mBg=Ede>K5eQB2
+IzOIBEd;QMg?iVKo0>JH881
+R2
+R0
+w1651856303
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1651856304.000000
+R8
+R9
+!i113 1
+R10
+R11
+vmemory_128x8bit_vlg_vec_tst
+R23
+!i10b 1
+!s100 :OWiiYV4:RE^gUR^KO0n70
+Ic`FdR9=Ce7NZCboCTTSTn0
+R2
+R0
+w1651856301
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+!s108 1651856305.000000
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+R11
+vregister_file
+Z24 !s110 1652013484
+!i10b 1
+!s100 FV?ZLLoBkCBYA3C0ZB_=Q2
+IRKLI0f84nNm]V=Xbb:`z=1
+R2
+R0
+w1652013483
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z25 !s108 1652013484.000000
+R8
+R9
+!i113 1
+R10
+R11
+vregister_file_vlg_vec_tst
+R24
+!i10b 1
+!s100 ZkklYYLa[?YW4gMzeID_90
+I`EgB2AOYMX]601cM:0Az01
+R2
+R0
+w1652013481
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+R25
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R10
+R11
+vsingle_cycle_computer_all
+Z26 !s110 1652036813
+!i10b 1
+!s100 CGU^i595zil<ikdk03_1Y0
+Ik5QJl`gIg]XaA^VGl8=kD0
+R2
+R0
+w1652036810
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1652036811.000000
+R8
+R9
+!i113 1
+R10
+R11
+vsingle_cycle_computer_all_vlg_vec_tst
+R26
+!i10b 1
+!s100 6VPfM_eGaaP4]BLjO41aI2
+IUT]To^cPH:Gk_jORX;HP=3
+R2
+R0
+w1652036807
+8Waveform8.vwf.vt
+FWaveform8.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+!s108 1652036813.000000
+!s107 Waveform8.vwf.vt|
+!s90 -work|work|Waveform8.vwf.vt|
+!i113 1
+R10
+R11
+vsingle_cycle_computer_controller
+Z27 !s110 1652011565
+!i10b 1
+!s100 dnE>mQ?XGi@PoKEi0Q>XU3
+IXS:L`DmMb1?1LB9W2hCj12
+R2
+R0
+w1652011563
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1652011564.000000
+R8
+R9
+!i113 1
+R10
+R11
+vsingle_cycle_computer_controller_vlg_vec_tst
+R27
+!i10b 1
+!s100 e_o?:[XcoZPmh7HWVMdeV0
+IHPIP?6XhS6PY]052TD>l12
+R2
+R0
+w1652011561
+Z28 8Waveform.vwf.vt
+Z29 FWaveform.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+!s108 1652011565.000000
+Z30 !s107 Waveform.vwf.vt|
+Z31 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vsingle_cycle_computer_datapath
+Z32 !s110 1651951367
+!i10b 1
+!s100 ^J0CF8b[OK]f`XKb50oB]2
+IKj[>=O^gHOZQODe[<=YIT0
+R2
+R0
+w1651951364
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1651951365.000000
+R8
+R9
+!i113 1
+R10
+R11
+vsingle_cycle_computer_datapath_vlg_vec_tst
+R32
+!i10b 1
+!s100 J=l15`Qc0mdcG10fRAHRl3
+IZLSUJmj]c5KRO:kEf8;BC0
+R2
+R0
+w1651951361
+8Waveform9.vwf.vt
+FWaveform9.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+!s108 1651951367.000000
+!s107 Waveform9.vwf.vt|
+!s90 -work|work|Waveform9.vwf.vt|
+!i113 1
+R10
+R11
+vsingle_cycle_computer_tb
+Z33 !s110 1652011407
+!i10b 1
+!s100 aDX94MnkIV5zSG23lY01e3
+I`Rl2cQnnghN^QNn1g05j63
+R2
+R0
+w1652011406
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z34 !s108 1652011407.000000
+R8
+R9
+!i113 1
+R10
+R11
+vsingle_cycle_computer_tb_vlg_vec_tst
+R33
+!i10b 1
+!s100 nE9AleGc8A0W0TM=:NU?41
+Io:F?_UXknPzZ6_463o4hR2
+R2
+R0
+w1652011404
+R28
+R29
+R12
+R6
+r1
+!s85 0
+31
+R34
+R30
+R31
+!i113 1
+R10
+R11

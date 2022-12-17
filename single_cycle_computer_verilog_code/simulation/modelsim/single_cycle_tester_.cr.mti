@@ -1,0 +1,127 @@
+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/immediate_extender.v {1 {vlog -work work -stats=none C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/immediate_extender.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module immediate_extender
+
+Top level modules:
+	immediate_extender
+
+} {} {}} C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/TwotoFourDecoder.v {1 {vlog -work work -stats=none C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/TwotoFourDecoder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TwotoFourDecoder
+
+Top level modules:
+	TwotoFourDecoder
+
+} {} {}} C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/constant_value_gen.v {1 {vlog -work work -stats=none C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/constant_value_gen.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module constant_value_gen
+
+Top level modules:
+	constant_value_gen
+
+} {} {}} C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/alu_unit.v {1 {vlog -work work -stats=none C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/alu_unit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module alu_unit
+
+Top level modules:
+	alu_unit
+
+} {} {}} C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/w_bit_two_to_one_mux.v {1 {vlog -work work -stats=none C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/w_bit_two_to_one_mux.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module w_bit_two_to_one_mux
+
+Top level modules:
+	w_bit_two_to_one_mux
+
+} {} {}} C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/full_adder.v {1 {vlog -work work -stats=none C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/full_adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module full_adder
+
+Top level modules:
+	full_adder
+
+} {} {}} C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/memory_128x8bit.v {1 {vlog -work work -stats=none C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/memory_128x8bit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module memory_128x8bit
+
+Top level modules:
+	memory_128x8bit
+
+} {} {}} C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/tester_module.v {1 {vlog -work work -stats=none {C:\Users\hemre\OneDrive\Belgeler\single_cycle_computer\tester_module.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tester_module
+
+Top level modules:
+	tester_module
+
+} {} {}} C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_datapath_verilog.v {1 {vlog -work work -stats=none C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_datapath_verilog.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module single_cycle_computer_datapath_verilog
+
+Top level modules:
+	single_cycle_computer_datapath_verilog
+
+} {} {}} C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/barrel_shifter.v {1 {vlog -work work -stats=none C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/barrel_shifter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module barrel_shifter
+
+Top level modules:
+	barrel_shifter
+
+} {} {}} C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/computer_tb.v {1 {vlog -work work -stats=none C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/computer_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module computer_tb
+
+Top level modules:
+	computer_tb
+
+} {} {}} C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_all.v {1 {vlog -work work -stats=none C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_all.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module single_cycle_computer_all
+
+Top level modules:
+	single_cycle_computer_all
+
+} {} {}} C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/registers_two.v {1 {vlog -work work -stats=none C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/registers_two.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module registers_two
+
+Top level modules:
+	registers_two
+
+} {} {}} C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_controller.v {1 {vlog -work work -stats=none C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module single_cycle_computer_controller
+
+Top level modules:
+	single_cycle_computer_controller
+
+} {} {}} C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/data_memory.v {1 {vlog -work work -stats=none C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/data_memory.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module data_memory
+
+Top level modules:
+	data_memory
+
+} {} {}} C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/instruction_memory.v {1 {vlog -work work -stats=none C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/instruction_memory.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module instruction_memory
+
+Top level modules:
+	instruction_memory
+
+} {} {}} C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/w_bit_four_to_one_mux.v {1 {vlog -work work -stats=none C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/w_bit_four_to_one_mux.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module w_bit_four_to_one_mux
+
+Top level modules:
+	w_bit_four_to_one_mux
+
+} {} {}} C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/register_file.v {1 {vlog -work work -stats=none C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/register_file.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module register_file
+
+Top level modules:
+	register_file
+
+} {} {}}

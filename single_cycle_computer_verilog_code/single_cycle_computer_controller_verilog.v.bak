@@ -1,0 +1,180 @@
+module single_cycle_computer_controller (
+	RegSrc,
+	ExtControl,
+	RegWrite,
+	MemWrite,
+	MemtoReg,
+	Clock,
+	ALUSrc,
+	flagUpdate,
+	AluShiftSelect, 
+	ALUop,
+	ShiftSel,
+	FLAG_OUT,
+	INSTRUCTION_OUT
+); 
+	
+	output reg RegSrc, ExtControl, RegWrite, MemWrite, MemtoReg, ALUSrc, flagUpdate, AluShiftSelect; 
+	output reg [2:0]ALUop; 
+	output reg [1:0]ShiftSel; 
+	input [31:0]FLAG_OUT; 
+	input [31:0]INSTRUCTION_OUT; 
+	input Clock; 
+	
+	// connect controller to the datapath. 
+	single_cycle_computer_datapath_verilog datapath (
+		RegSrc,
+		ExtControl,
+		RegWrite,
+		MemWrite,
+		MemtoReg,
+		Clock,
+		ALUSrc,
+		flagUpdate,
+		AluShiftSelect,
+		ALUop,
+		ShiftSel,
+		FLAG_OUT,
+		INSTRUCTION_OUT
+	);  
+	
+	reg [1:0]op;
+	reg [5:0]funct; 
+	reg [1:0]shift_type; 
+	reg [31:0]INSTRUCTION; 
+	
+	always @(INSTRUCTION_OUT) begin 
+		op <= INSTRUCTION_OUT[27:26]; 
+		funct <= INSTRUCTION_OUT[25:20]; 
+		shift_type <= INSTRUCTION_OUT[6:5]; 
+	end 
+	
+	always @(op, funct, shift_type) begin // when the instruction changes, change the control signals 
+		
+			// initialize control signals to 0.
+			RegSrc = 0; 
+			ExtControl = 0; 
+			RegWrite = 0; 
+			MemWrite = 0; 
+			MemtoReg = 0; 
+			ALUSrc = 0; 
+			flagUpdate = 0; 
+			AluShiftSelect = 0; 
+			ALUop = 3'b0; 
+			ShiftSel = 2'b11; 
+			
+		if (op == 2'b00 && funct[4:1] == 4'b0100) begin // ADD
+			RegSrc = 1; // choose Rm  
+			ExtControl = 1; // don't care 
+			RegWrite = 1; 
+			MemWrite = 0; 
+			MemtoReg = 0; 
+			ALUSrc = 0; // choose Rm output  
+			flagUpdate = 0; 
+			AluShiftSelect = 0;
+			ALUop = 3'b000; // ADD operation  
+			ShiftSel = 2'b11;
+		end 
+		if (op == 2'b00 && funct[4:1] == 4'b0010) begin // SUB 
+			RegSrc = 1; // choose Rm  
+			ExtControl = 1; // don't care 
+			RegWrite = 1; 
+			MemWrite = 0; 
+			MemtoReg = 0; 
+			ALUSrc = 0; // choose Rm output  
+			flagUpdate = 0; 
+			AluShiftSelect = 0;
+			ALUop = 3'b001; // SUB operation  
+			ShiftSel = 2'b11;
+		end 
+
+		if (op == 2'b00 && funct[4:1] == 4'b1100) begin // ORR
+			RegSrc = 1; // choose Rm  
+			ExtControl = 1; // don't care 
+			RegWrite = 1; 
+			MemWrite = 0; 
+			MemtoReg = 0; 
+			ALUSrc = 0; // choose Rm output  
+			flagUpdate = 0; 
+			AluShiftSelect = 0;
+			ALUop = 3'b101; // OR operation  
+			ShiftSel = 2'b11;
+		end 
+		if (op == 2'b00 && funct[4:1] == 4'b1101 && shift_type == 2'b00) begin // LSL 
+			RegSrc = 1; // choose Rm  
+			ExtControl = 1; // don't care 
+			RegWrite = 1; 
+			MemWrite = 0; 
+			MemtoReg = 0; 
+			ALUSrc = 0; // choose Rm output  
+			flagUpdate = 0; 
+			AluShiftSelect = 1;
+			ALUop = 3'b000; // ADD the shifted result with 0.
+			ShiftSel = 2'b00; // left shift
+		end 
+		if (op == 2'b00 && funct[4:1] == 4'b1101 && shift_type == 2'b01) begin // LSR
+			RegSrc = 1; // choose Rm  
+			ExtControl = 1; // don't care 
+			RegWrite = 1; 
+			MemWrite = 0; 
+			MemtoReg = 0; 
+			ALUSrc = 0; // choose Rm output  
+			flagUpdate = 0; 
+			AluShiftSelect = 1;
+			ALUop = 3'b000; // ADD the shifted result with 0.    
+			ShiftSel = 2'b01; // rigt shift
+		end 
+		if (op == 2'b00 && funct[4:1] == 4'b0000) begin // AND 
+			RegSrc = 1; // choose Rm  
+			ExtControl = 1; // don't care 
+			RegWrite = 1; 
+			MemWrite = 0; 
+			MemtoReg = 0; 
+			ALUSrc = 0; // choose Rm output  
+			flagUpdate = 0;
+			AluShiftSelect = 0;	
+			ALUop = 3'b100; // AND operation  
+			ShiftSel = 2'b11;
+		end 
+		if (op == 2'b00 && funct[4:1] == 4'b1010) begin // CMP 
+			RegSrc = 0; // choose Rd in 
+			ExtControl = 1; // don't care 
+			RegWrite = 1; 
+			MemWrite = 0; 
+			MemtoReg = 0; 
+			ALUSrc = 1; // choose Rd output  
+			flagUpdate = 1;
+			AluShiftSelect = 0;	
+			ALUop = 3'b001; // SUB operation  
+			ShiftSel = 2'b00;
+		end 
+		if (op == 2'b01 && funct[0] == 0) begin // STR
+			RegSrc = 1; 
+			ExtControl = 1; 
+			RegWrite = 0; 
+			MemWrite = 1; 
+			MemtoReg = 0; 
+			ALUSrc = 1; // choose immediate 
+			flagUpdate = 0; 
+			AluShiftSelect = 0;
+			ALUop = 3'b000; // add the immediate  
+			ShiftSel = 2'b11;
+		end 
+		if (op == 2'b01 && funct[0] == 1) begin // LDR 
+			RegSrc = 1; 
+			ExtControl = 1; 
+			RegWrite = 1; 
+			MemWrite = 0; 
+			MemtoReg = 1; 
+			ALUSrc = 1; // choose immediate 
+			flagUpdate = 0; 
+			AluShiftSelect = 0;
+			ALUop = 3'b000; // add the immediate  
+			ShiftSel = 2'b11;
+		end 
+	
+	end 
+	
+	
+
+endmodule 

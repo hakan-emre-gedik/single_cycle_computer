@@ -1,0 +1,9 @@
+module barrel_shifter (
+	data_in, 
+	shift_type, 
+	shamt, 
+	data_out
+); 
+
+
+endmodule 

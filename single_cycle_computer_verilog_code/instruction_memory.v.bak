@@ -1,0 +1,14 @@
+module instruction_memory(
+	data_out, 
+	address_in, 
+); 
+	output reg [31:0] data_out; // input and output should have 32-bit length. 	
+	input [31:0] address_in; 
+
+	reg [31:0] mem[127:0]; 
+	
+	always @(*) begin 
+		data_out <= mem[address_in]; 
+	end 
+
+endmodule 

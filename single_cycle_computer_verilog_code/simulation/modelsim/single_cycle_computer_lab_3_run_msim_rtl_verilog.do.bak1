@@ -1,0 +1,11 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer {C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/w_bit_four_to_one_mux.v}
+vlog -vlog01compat -work work +incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer {C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/registers_two.v}
+vlog -vlog01compat -work work +incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer {C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/register_file.v}
+

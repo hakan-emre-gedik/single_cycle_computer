@@ -1,0 +1,11 @@
+module tester_module (); 
+
+
+	reg clk; 
+	
+	reg [31:0] vector_num, errors; 
+	reg [1:0] testvectors [9999:0]; 
+	
+	// instantiate device under test. 
+	
+	

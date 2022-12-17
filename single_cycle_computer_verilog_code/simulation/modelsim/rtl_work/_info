@@ -1,0 +1,361 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/simulation/modelsim
+valu_unit
+Z1 !s110 1652044178
+!i10b 1
+!s100 >?=6DJE`m;WUD]_C`YCz12
+I^FfAZakiMkW8n0j6IFCka1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1651883027
+8C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/alu_unit.v
+FC:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/alu_unit.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1652044178.000000
+!s107 C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/alu_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer|C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/alu_unit.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer
+Z7 tCvgOpt 0
+vbarrel_shifter
+R1
+!i10b 1
+!s100 5i8]]Acl;4X>gMF3AM7;o0
+Ii>nC2czU<H?A6iQA<EFQE2
+R2
+R0
+w1651972428
+8C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/barrel_shifter.v
+FC:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/barrel_shifter.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/barrel_shifter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer|C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/barrel_shifter.v|
+!i113 1
+R5
+R6
+R7
+vcomputer_tb
+!s110 1652044277
+!i10b 1
+!s100 1^e4TK]bfM8kS3ol68l5c3
+IfOT?BjT0nU13j[inH_2HG0
+R2
+R0
+w1652037148
+8C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/computer_tb.v
+FC:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/computer_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1652044277.000000
+!s107 C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/computer_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/computer_tb.v|
+!i113 1
+o-work work
+R7
+vconstant_value_gen
+R1
+!i10b 1
+!s100 TPHYnRd][Qbn3iz2ZO5Qo3
+I1nh[NDT6joBg;2PM4Ole32
+R2
+R0
+w1648401576
+8C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/constant_value_gen.v
+FC:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/constant_value_gen.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/constant_value_gen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer|C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/constant_value_gen.v|
+!i113 1
+R5
+R6
+R7
+vdata_memory
+Z8 !s110 1652044179
+!i10b 1
+!s100 o@QJdGJDUnQG`Q5gP6R2a3
+IFS^m8N3=4<BnoOLNN<9S20
+R2
+R0
+w1652014648
+8C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/data_memory.v
+FC:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/data_memory.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1652044179.000000
+!s107 C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/data_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer|C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/data_memory.v|
+!i113 1
+R5
+R6
+R7
+vfull_adder
+R8
+!i10b 1
+!s100 fV>Vi>SnWKnJif1ncXN^f2
+ImYXh^nVcCI_ZQ3ObEQ@b[3
+R2
+R0
+w1651870780
+8C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/full_adder.v
+FC:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/full_adder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/full_adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer|C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/full_adder.v|
+!i113 1
+R5
+R6
+R7
+vimmediate_extender
+R1
+!i10b 1
+!s100 oQoBb4=2cI2TI^mUFN?5P3
+I9IeJYKiKzB4z;[:ZcAdDV2
+R2
+R0
+w1652019831
+8C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/immediate_extender.v
+FC:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/immediate_extender.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/immediate_extender.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer|C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/immediate_extender.v|
+!i113 1
+R5
+R6
+R7
+vinstruction_memory
+R8
+!i10b 1
+!s100 :X_HLMGcAo7MiV2L^cDN10
+Ig6<bAE;0LMh^G@GA_]PgQ2
+R2
+R0
+w1652029407
+8C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/instruction_memory.v
+FC:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/instruction_memory.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/instruction_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer|C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/instruction_memory.v|
+!i113 1
+R5
+R6
+R7
+vregister_file
+R1
+!i10b 1
+!s100 @gTjGN8j[2k;[2B96gYUJ0
+I=O8TKXb2DBP<X:A0obAPk1
+R2
+R0
+w1652035856
+8C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/register_file.v
+FC:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/register_file.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/register_file.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer|C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/register_file.v|
+!i113 1
+R5
+R6
+R7
+vregisters_two
+R1
+!i10b 1
+!s100 1ZOEz<nM?SkI3ec=U[C4L3
+I`aJ1ab<8B_SY6A@k;79X81
+R2
+R0
+w1648402007
+8C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/registers_two.v
+FC:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/registers_two.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/registers_two.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer|C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/registers_two.v|
+!i113 1
+R5
+R6
+R7
+vsingle_cycle_computer_all
+R8
+!i10b 1
+!s100 6<=K6a^[Y_]YiZiEBTZCS3
+I`E;;YoMi@8?OcQoIYc;=12
+R2
+R0
+w1652036309
+8C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_all.v
+FC:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_all.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_all.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer|C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_all.v|
+!i113 1
+R5
+R6
+R7
+vsingle_cycle_computer_controller
+R8
+!i10b 1
+!s100 FTGMHLUP>5SW9fDgo>hM51
+IzKH^m?:Vbg8nO<L?F:MnB0
+R2
+R0
+w1652025135
+8C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_controller.v
+FC:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_controller.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer|C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_controller.v|
+!i113 1
+R5
+R6
+R7
+vsingle_cycle_computer_datapath_verilog
+R1
+!i10b 1
+!s100 G`iQ^Vk4WR`37_O4Z7GEF2
+IhQ89@aZz?oScLESc7]>Zc0
+R2
+R0
+w1652036214
+8C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_datapath_verilog.v
+FC:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_datapath_verilog.v
+L0 19
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_datapath_verilog.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer|C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_datapath_verilog.v|
+!i113 1
+R5
+R6
+R7
+vtester_module
+R8
+!i10b 1
+!s100 m0TXjbJ185B[5P2Tz[ZF43
+IGTL9J5F0moS5KgLCNnk2W0
+R2
+R0
+w1652043011
+8C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/tester_module.v
+FC:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/tester_module.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/tester_module.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer|C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/tester_module.v|
+!i113 1
+R5
+R6
+R7
+vw_bit_four_to_one_mux
+R1
+!i10b 1
+!s100 `6@HMcSL0LCD;2]M@G4oM1
+IZ_YMLjh@n58N1@X1?_L?:0
+R2
+R0
+w1648401519
+8C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/w_bit_four_to_one_mux.v
+FC:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/w_bit_four_to_one_mux.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/w_bit_four_to_one_mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer|C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/w_bit_four_to_one_mux.v|
+!i113 1
+R5
+R6
+R7
+vw_bit_two_to_one_mux
+R1
+!i10b 1
+!s100 EaVoKzM:b[99hM5c9502S1
+Ied?cXgJdT;9dMQlfRCzWQ3
+R2
+R0
+w1648401464
+8C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/w_bit_two_to_one_mux.v
+FC:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/w_bit_two_to_one_mux.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/w_bit_two_to_one_mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer|C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/w_bit_two_to_one_mux.v|
+!i113 1
+R5
+R6
+R7

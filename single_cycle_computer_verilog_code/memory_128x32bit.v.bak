@@ -1,0 +1,20 @@
+module instruction_memory(
+	data_out, 
+	data_in, 
+	address_in, 
+	we, 
+	clk 
+); 
+	output [31:0] data_out; // input and output should have 32-bit length. 	
+	input [31:0] data_in; 
+	input [6:0] address_in; 
+	input we; 
+	input clk; 
+
+	reg [31:0] mem[127:0]; // create 128 32-bit memory. 
+	
+	always (@posedge clk) begin 
+		
+	end 
+
+endmodule 

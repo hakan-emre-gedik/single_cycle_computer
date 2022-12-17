@@ -1,0 +1,150 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "05/07/2022 22:22:41"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          single_cycle_computer_datapath
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module single_cycle_computer_datapath_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [2:0] ALUop;
+reg ALUShiftSelect;
+reg ALUSrc;
+reg Clock;
+reg ExtControl;
+reg flagUpdate;
+reg MemtoReg;
+reg MemWrite;
+reg RegSrc;
+reg RegWrite;
+reg [1:0] ShiftSel;
+// wires                                               
+wire [3:0] FLAG_OUT;
+wire [31:0] INSTRUCTION_OUT;
+
+// assign statements (if any)                          
+single_cycle_computer_datapath i1 (
+// port map - connection between master ports and signals/registers   
+	.ALUop(ALUop),
+	.ALUShiftSelect(ALUShiftSelect),
+	.ALUSrc(ALUSrc),
+	.Clock(Clock),
+	.ExtControl(ExtControl),
+	.FLAG_OUT(FLAG_OUT),
+	.flagUpdate(flagUpdate),
+	.INSTRUCTION_OUT(INSTRUCTION_OUT),
+	.MemtoReg(MemtoReg),
+	.MemWrite(MemWrite),
+	.RegSrc(RegSrc),
+	.RegWrite(RegWrite),
+	.ShiftSel(ShiftSel)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+// ALUop[ 2 ]
+initial
+begin
+	ALUop[2] = 1'b0;
+end 
+// ALUop[ 1 ]
+initial
+begin
+	ALUop[1] = 1'b0;
+end 
+// ALUop[ 0 ]
+initial
+begin
+	ALUop[0] = 1'b0;
+end 
+
+// ALUShiftSelect
+initial
+begin
+	ALUShiftSelect = 1'b0;
+end 
+
+// ALUSrc
+initial
+begin
+	ALUSrc = 1'b0;
+end 
+
+// Clock
+always
+begin
+	Clock = 1'b0;
+	Clock = #10000 1'b1;
+	#10000;
+end 
+
+// ExtControl
+initial
+begin
+	ExtControl = 1'b0;
+end 
+
+// flagUpdate
+initial
+begin
+	flagUpdate = 1'b0;
+end 
+
+// MemtoReg
+initial
+begin
+	MemtoReg = 1'b0;
+end 
+
+// MemWrite
+initial
+begin
+	MemWrite = 1'b0;
+end 
+
+// RegSrc
+initial
+begin
+	RegSrc = 1'b0;
+end 
+
+// RegWrite
+initial
+begin
+	RegWrite = 1'b0;
+end 
+// ShiftSel[ 1 ]
+initial
+begin
+	ShiftSel[1] = 1'b0;
+end 
+// ShiftSel[ 0 ]
+initial
+begin
+	ShiftSel[0] = 1'b0;
+end 
+endmodule
+

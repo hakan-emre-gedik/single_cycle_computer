@@ -1,0 +1,23 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer {C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_datapath_verilog.v}
+vlog -vlog01compat -work work +incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer {C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/constant_value_gen.v}
+vlog -vlog01compat -work work +incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer {C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/w_bit_two_to_one_mux.v}
+vlog -vlog01compat -work work +incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer {C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/w_bit_four_to_one_mux.v}
+vlog -vlog01compat -work work +incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer {C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/registers_two.v}
+vlog -vlog01compat -work work +incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer {C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/alu_unit.v}
+vlog -vlog01compat -work work +incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer {C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/register_file.v}
+vlog -vlog01compat -work work +incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer {C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/immediate_extender.v}
+vlog -vlog01compat -work work +incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer {C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/barrel_shifter.v}
+vlog -vlog01compat -work work +incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer {C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/full_adder.v}
+vlog -vlog01compat -work work +incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer {C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_controller.v}
+vlog -vlog01compat -work work +incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer {C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/data_memory.v}
+vlog -vlog01compat -work work +incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer {C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/instruction_memory.v}
+vlog -vlog01compat -work work +incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer {C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_all.v}
+vlog -vlog01compat -work work +incdir+C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer {C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/tester_module.v}
+

@@ -1,0 +1,174 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// PROGRAM		"Quartus Prime"
+// VERSION		"Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+// CREATED		"Sat May 07 03:10:57 2022"
+
+module single_cycle_computer_datapath(
+	RegSrc,
+	ExtControl,
+	RegWrite,
+	MemWrite,
+	MemtoReg,
+	Clock,
+	ALUSrc,
+	ALUop,
+	ShiftSel
+);
+
+
+input wire	RegSrc;
+input wire	ExtControl;
+input wire	RegWrite;
+input wire	MemWrite;
+input wire	MemtoReg;
+input wire	Clock;
+input wire	ALUSrc;
+input wire	[2:0] ALUop;
+input wire	[1:0] ShiftSel;
+
+wire	[31:0] INSTRUCTION;
+wire	[31:0] SYNTHESIZED_WIRE_0;
+wire	[31:0] SYNTHESIZED_WIRE_1;
+wire	[31:0] SYNTHESIZED_WIRE_21;
+wire	[31:0] SYNTHESIZED_WIRE_22;
+wire	[31:0] SYNTHESIZED_WIRE_4;
+wire	[31:0] SYNTHESIZED_WIRE_5;
+wire	[31:0] SYNTHESIZED_WIRE_8;
+wire	[31:0] SYNTHESIZED_WIRE_23;
+wire	[31:0] SYNTHESIZED_WIRE_24;
+wire	[31:0] SYNTHESIZED_WIRE_25;
+wire	SYNTHESIZED_WIRE_13;
+wire	SYNTHESIZED_WIRE_15;
+wire	SYNTHESIZED_WIRE_16;
+wire	[3:0] SYNTHESIZED_WIRE_18;
+wire	[31:0] SYNTHESIZED_WIRE_19;
+wire	[31:0] SYNTHESIZED_WIRE_20;
+
+assign	SYNTHESIZED_WIRE_13 = 0;
+assign	SYNTHESIZED_WIRE_15 = 0;
+assign	SYNTHESIZED_WIRE_16 = 1;
+
+
+
+
+alu_unit	b2v_ALU(
+	.in_0(SYNTHESIZED_WIRE_0),
+	.in_1(SYNTHESIZED_WIRE_1),
+	.s(ALUop),
+	
+	
+	
+	
+	.outs(SYNTHESIZED_WIRE_22));
+	defparam	b2v_ALU.W = 32;
+
+
+memory_128x8bit	b2v_DATA_MEMORY(
+	.we(MemWrite),
+	.clk(Clock),
+	.address_in(SYNTHESIZED_WIRE_21),
+	.data_in(SYNTHESIZED_WIRE_22),
+	.data_out(SYNTHESIZED_WIRE_5));
+
+
+w_bit_two_to_one_mux	b2v_inst(
+	.s(RegSrc),
+	.in_0(INSTRUCTION[3:0]),
+	.in_1(INSTRUCTION[15:12]),
+	.outs(SYNTHESIZED_WIRE_18));
+	defparam	b2v_inst.W = 4;
+
+
+constant_value_gen	b2v_inst10(
+	.outs(SYNTHESIZED_WIRE_24));
+	defparam	b2v_inst10.constant_val = 4;
+	defparam	b2v_inst10.W = 32;
+
+
+barrel_shifter	b2v_inst107(
+	.data_in(SYNTHESIZED_WIRE_4),
+	.shamt(INSTRUCTION[11:7]),
+	.shift_type(ShiftSel),
+	.data_out(SYNTHESIZED_WIRE_0));
+
+
+
+
+
+w_bit_two_to_one_mux	b2v_inst4(
+	.s(MemtoReg),
+	.in_0(SYNTHESIZED_WIRE_5),
+	.in_1(SYNTHESIZED_WIRE_22),
+	.outs(SYNTHESIZED_WIRE_20));
+	defparam	b2v_inst4.W = 32;
+
+
+w_bit_two_to_one_mux	b2v_inst6(
+	.s(ALUSrc),
+	.in_0(SYNTHESIZED_WIRE_21),
+	.in_1(SYNTHESIZED_WIRE_8),
+	.outs(SYNTHESIZED_WIRE_1));
+	defparam	b2v_inst6.W = 32;
+
+
+immediate_extender	b2v_inst7(
+	.imm_src(ExtControl),
+	.immediate_input(INSTRUCTION[11:0]),
+	.immediate_output(SYNTHESIZED_WIRE_8));
+
+
+full_adder	b2v_inst8(
+	.in_1(SYNTHESIZED_WIRE_23),
+	.in_2(SYNTHESIZED_WIRE_24),
+	.data_out(SYNTHESIZED_WIRE_25));
+
+
+full_adder	b2v_inst9(
+	.in_1(SYNTHESIZED_WIRE_25),
+	.in_2(SYNTHESIZED_WIRE_24),
+	.data_out(SYNTHESIZED_WIRE_19));
+
+
+memory_128x8bit	b2v_INSTRUCTION_MEMORY(
+	.we(SYNTHESIZED_WIRE_13),
+	.clk(Clock),
+	.address_in(SYNTHESIZED_WIRE_23),
+	
+	.data_out(INSTRUCTION));
+
+
+registers_two	b2v_PC(
+	.clk(Clock),
+	.rst(SYNTHESIZED_WIRE_15),
+	.wen(SYNTHESIZED_WIRE_16),
+	.data(SYNTHESIZED_WIRE_25),
+	.A(SYNTHESIZED_WIRE_23));
+	defparam	b2v_PC.W = 32;
+
+
+register_file	b2v_REG_FILE(
+	.wen(RegWrite),
+	.clk(Clock),
+	.A_1(INSTRUCTION[19:16]),
+	.A_2(SYNTHESIZED_WIRE_18),
+	.A_3(INSTRUCTION[15:12]),
+	.R15(SYNTHESIZED_WIRE_19),
+	.WD3(SYNTHESIZED_WIRE_20),
+	.RD1(SYNTHESIZED_WIRE_4),
+	.RD2(SYNTHESIZED_WIRE_21));
+
+
+endmodule

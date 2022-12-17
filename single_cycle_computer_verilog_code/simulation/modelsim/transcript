@@ -1,0 +1,44 @@
+# Compile of tester_module.v was successful.
+# Compile of TwotoFourDecoder.v was successful.
+# Compile of w_bit_four_to_one_mux.v was successful.
+# Compile of w_bit_two_to_one_mux.v was successful.
+# Compile of alu_unit.v was successful.
+# Compile of barrel_shifter.v was successful.
+# Compile of computer_tb.v was successful.
+# Compile of constant_value_gen.v was successful.
+# Compile of data_memory.v was successful.
+# Compile of full_adder.v was successful.
+# Compile of immediate_extender.v was successful.
+# Compile of instruction_memory.v was successful.
+# Compile of memory_128x8bit.v was successful.
+# Compile of register_file.v was successful.
+# Compile of registers_two.v was successful.
+# Compile of single_cycle_computer_all.v was successful.
+# Compile of single_cycle_computer_controller.v was successful.
+# Compile of single_cycle_computer_datapath_verilog.v was successful.
+# 18 compiles, 0 failed with no errors.
+vsim rtl_work.tester_module
+# vsim rtl_work.tester_module 
+# Start time: 23:54:06 on May 08,2022
+# Loading rtl_work.tester_module
+# Loading rtl_work.single_cycle_computer_all
+# Loading rtl_work.single_cycle_computer_controller
+# Loading rtl_work.single_cycle_computer_datapath_verilog
+# ** Error: (vsim-3033) C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_datapath_verilog.v(86): Instantiation of 'alu_unit' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tester_module/dut/datapath File: C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/single_cycle_computer_datapath_verilog.v
+#         Searched libraries:
+#             C:/Users/hemre/OneDrive/Belgeler/single_cycle_computer/simulation/modelsim/rtl_work
+# Loading rtl_work.instruction_memory
+# Loading rtl_work.registers_two
+# Loading rtl_work.constant_value_gen
+# Loading rtl_work.barrel_shifter
+# Loading rtl_work.w_bit_two_to_one_mux
+# Loading rtl_work.data_memory
+# Loading rtl_work.immediate_extender
+# Loading rtl_work.register_file
+# Loading rtl_work.w_bit_four_to_one_mux
+# Loading rtl_work.full_adder
+# Error loading design
+# End time: 23:54:07 on May 08,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# Load canceled
